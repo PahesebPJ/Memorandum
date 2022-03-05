@@ -1,0 +1,116 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: #B53471;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+}
+
+body {
+    background-image: url('img/433571.jpg');
+    height: 100%;
+    width: 100%;
+}
+
+.winMessage {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 250px;
+    z-index: 2;
+    background-color: brown;
+    border-radius: 15px;
+    text-align: center;
+    display: none;
+}
+
+.board {
+    background-color: rgb(68, 66, 66);
+    width: 1150px;
+    height: 900px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.maincontainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.37), 0 6px 20px 0 rgba(255, 255, 255, 0.253);
+    margin-top: 20px;
+}
+
+.thecard:hover {
+    cursor: pointer;
+}
+
+.thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #9980FA;
+    border-radius: 15px;
+}
+
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+}
+
+.theback img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.thefront img {
+    width: 90%;
+    height: 50%;
+    margin-top: 40px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+.winMessage img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#ok {
+    margin-top: 15px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+#ok:hover {
+    background-color: rgb(233, 230, 230);
+}
+
+.youWin {
+    font-size: 30px;
+    margin-top: 20px;
+    color: white;
+}
